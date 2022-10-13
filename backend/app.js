@@ -1,5 +1,6 @@
 const express = require("express");
 const helmet = require("helmet");
+const cors = require("cors");
 
 // import de la connexion a mongoDB
 require("./config/mongoDb");
@@ -27,6 +28,15 @@ app.use((req, res, next) => {
     );
     next();
   });
+
+// configuration pour les requêtes axios
+const corsConfig = {
+  origin: true,
+  credentials: true,
+};
+
+app.use(cors(corsConfig));
+app.options("*", cors(corsConfig));
 
 
 app.use(express.json());
