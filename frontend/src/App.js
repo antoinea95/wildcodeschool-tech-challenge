@@ -1,8 +1,9 @@
-import './App.css';
+import './styles/main.scss';
 import { Form } from './components/Form';
 import { Argonautes } from './components/Argonautes';
 import { Context } from './components/Context';
 import { useState } from 'react';
+import { Header } from './components/Header';
 
 function App() {
 
@@ -11,8 +12,11 @@ function App() {
   return (
     <Context.Provider value={{update, setUpdate}}>
     <div className="App">
-      <Form />
-      <Argonautes />
+      <Header/>
+      <main className='main'>
+        <Form />
+        <Argonautes />
+      </main>
     </div>
     </Context.Provider>
   );

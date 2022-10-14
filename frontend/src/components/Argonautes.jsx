@@ -20,10 +20,15 @@ export function Argonautes() {
     }, [update, setUpdate])
 
     return (
-        argonautes.map((argo) => {
+        <div className="members">
+        <h2 className="members--title">Membres de l'équipage</h2>
+        <div className="members--container">
+        {argonautes.map((argo) => {
             return(
-                    <p>{argo.prenom}</p>
+                    <p className="members--name">{argo.prenom}</p>
             )
-        })
+        })}
+        </div>
+        </div>
     )
 }

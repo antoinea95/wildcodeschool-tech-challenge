@@ -1,0 +1,34 @@
+.members {
+    width: 100%;
+    max-width: 60rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--title {
+        @include title;
+    }
+
+    &--container {
+        width: 95%;
+        background-color: beige;
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        padding: 1rem;
+        border-style: double;
+        border-width: 0.6rem;
+    }
+    
+    &--name {
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+
+}
+

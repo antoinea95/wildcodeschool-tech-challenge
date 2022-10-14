@@ -14,8 +14,7 @@ export function Form() {
     // Objet Yup qui permet de contrôler le formulaire
   const ValidationSchema = Yup.object().shape({
     prenom: Yup.string()
-      .min(1, "Le message de votre post est vide")
-      .required("Merci de saisir votre prenom")
+      .required("Merci de saisir votre prénom")
       .matches("^[A-Za-zÀ-ÖØ-öø-ÿ-' ]{2,}$", "Prénom invalide"),
   });
 
@@ -51,12 +50,13 @@ export function Form() {
 
     return(
         <>
-        <form onSubmit={handleSubmit(onSignUp)}>
-            <label htmlFor="prenom">Prénom</label>
-            <input id="prenom" name="prenom" type="text" {...register('prenom')} />
-            <button type="submit"> Envoyer </button>
+        <h2 className="form--title"> Ajouter un argonaute</h2>
+        <form onSubmit={handleSubmit(onSignUp)} className='form'>
+            <label htmlFor="prenom" className="form--label">Prénom</label>
+            <input id="prenom" name="prenom" type="text" {...register('prenom')} placeholder=' Ulysse' className="form--input" aria-required/>
+            <button type="submit" className="form--btn"> Envoyer </button>
         </form>
-        <small> {errors.prenom?.message}</small>
+        <small className="form--error"> {errors.prenom?.message}</small>
         </>
     )
 }

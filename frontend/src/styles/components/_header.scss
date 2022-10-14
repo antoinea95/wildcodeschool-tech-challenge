@@ -1,0 +1,20 @@
+.header {
+    background-color: beige;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    &--img {
+        width: 10rem;
+        margin: 1rem;
+    }
+
+    &--title {
+        font-family: 'GFS Neohellenic', sans-serif;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+}

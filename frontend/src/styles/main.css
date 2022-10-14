@@ -1,0 +1,163 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "GFS Neohellenic", sans-serif;
+  margin: 0;
+}
+
+.main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  background-color: beige;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.header--img {
+  width: 10rem;
+  margin: 1rem;
+}
+.header--title {
+  font-family: "GFS Neohellenic", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+.form--title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.form--label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.form--input {
+  width: 25rem;
+  height: 3rem;
+  border: 0.3rem double #ED6C6D;
+}
+.form--btn {
+  cursor: pointer;
+  border: 0.3rem double transparent;
+  background-color: #ED6C6D;
+  height: 3rem;
+  font-family: "GFS Neohellenic", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+.form--btn:hover {
+  color: #ED6C6D;
+  background-color: white;
+  border-color: #ED6C6D;
+}
+.form--btn:active {
+  background-color: #ED6C6D;
+  color: white;
+  box-shadow: inset 0 0 0.2rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+.form--error {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+}
+
+.members {
+  width: 100%;
+  max-width: 60rem;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.members--title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.members--container {
+  width: 95%;
+  background-color: beige;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  padding: 1rem;
+  border-style: double;
+  border-width: 0.6rem;
+}
+.members--name {
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=main.css.map */
