@@ -12,16 +12,16 @@
 
     &--container {
         width: 95%;
-        background-color: beige;
+        background: url('../../../images/paper.jpg');
         margin: 1rem;
         display: grid;
         grid-template-columns: repeat(3, auto);
         padding: 1rem;
-        border-style: double;
-        border-width: 0.6rem;
+        border: 0.5rem double black;
     }
     
     &--name {
+        color: black;
         padding: 1rem;
         text-align: center;
         text-transform: uppercase;

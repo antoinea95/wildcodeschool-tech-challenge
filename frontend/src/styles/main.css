@@ -48,6 +48,7 @@ html {
 }
 
 body {
+  background-color: rgba(173, 216, 230, 0.5);
   font-family: "GFS Neohellenic", sans-serif;
   margin: 0;
 }
@@ -63,7 +64,6 @@ body {
 }
 
 .header {
-  background-color: beige;
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -146,15 +146,15 @@ body {
 }
 .members--container {
   width: 95%;
-  background-color: beige;
+  background: url("../../../images/paper.jpg");
   margin: 1rem;
   display: grid;
   grid-template-columns: repeat(3, auto);
   padding: 1rem;
-  border-style: double;
-  border-width: 0.6rem;
+  border: 0.5rem double black;
 }
 .members--name {
+  color: black;
   padding: 1rem;
   text-align: center;
   text-transform: uppercase;
